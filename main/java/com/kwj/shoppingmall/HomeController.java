@@ -38,7 +38,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public String products(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -53,7 +53,6 @@ public class HomeController {
 	
 	@RequestMapping(value = "/shop", method = RequestMethod.GET)
 	public String shop(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -64,4 +63,117 @@ public class HomeController {
 		
 		return "shop";
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "login";
+	}
+	
+	@RequestMapping(value = "/cart", method = RequestMethod.GET)
+	public String cart(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "cart";
+	}
+	
+	@RequestMapping(value = "/product-details", method = RequestMethod.GET)
+	public String productdetails(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "product-details";
+	}
+	
+	@RequestMapping(value = "/checkout", method = RequestMethod.GET)
+	public String checkout(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "checkout";
+	}
+	
+	@RequestMapping(value = "/contact-us", method = RequestMethod.GET)
+	public String contactus(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "contact-us";
+	}
+	
+	@RequestMapping(value = "/blog-single", method = RequestMethod.GET)
+	public String blogsingle(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "blog-single";
+	}
+	
+	@RequestMapping(value = "/blog", method = RequestMethod.GET)
+	public String blog(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "blog";
+	}
+	
+	@RequestMapping(value = "/404", method = RequestMethod.GET)
+	public String F04(Locale locale, Model model) {
+		
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "404";
+	}
+	
 }
