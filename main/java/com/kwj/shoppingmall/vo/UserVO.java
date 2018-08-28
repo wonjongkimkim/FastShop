@@ -3,74 +3,62 @@ package com.kwj.shoppingmall.vo;
 public class UserVO {
 	private String id;
 	private String username;
-	private String emailAddress;
+	private String email;
 	private String passwd;
-	private String phoneNumber;
+	private String phone;
 	private String country;
 	private String address;
-	private String regDate;
-	
+	private String date;
 	public String getId() {
 		return id;
 	}
-	
 	public void setId(String id) {
 		this.id = id;
 	}
-	
-	public String getUserName() {
+	public String getUsername() {
 		return username;
 	}
-	
-	public void setUserName(String username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
-	
-	public String getEmailAddress() {
-		return emailAddress;
+	public String getEmail() {
+		return email;
 	}
-	
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	
-	public String getPassWd() {
+	public String getPasswd() {
 		return passwd;
 	}
-	
-	public void setPassWd(String passwd) {
+	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	}
-	
-	public String getPhoneNumber() {
-		return phoneNumber;
+
+	public String getPhone() {
+		return phone;
 	}
-	
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-	
 	public String getCountry() {
 		return country;
 	}
-	
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	
 	public String getAddress() {
 		return address;
 	}
-	
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	public String getRegDate() {
-		return regDate;
+	public String getDate() {
+		return date;
 	}
-	
-	public void setRegDate(String regDate) {
-		this.regDate = regDate;
+	public void setDate(String date) {
+		this.date = date;
 	}
+
+	
+
 }
