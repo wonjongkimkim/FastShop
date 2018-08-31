@@ -9,7 +9,7 @@ public class ProductVO {
 	private String image;
 	private String category;
 	private String size;
-	private String brand_name;
+	private String brandName;
 	
 	public int getId() {
 		return id;
@@ -75,11 +75,13 @@ public class ProductVO {
 		this.size = size;
 	}
 
-	public String getBrand_name() {
-		return brand_name;
+	public String getBrandName() {
+		return brandName;
 	}
 
-	public void setBrand_name(String brand_name) {
-		this.brand_name = brand_name;
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
 	}
+
+
 }

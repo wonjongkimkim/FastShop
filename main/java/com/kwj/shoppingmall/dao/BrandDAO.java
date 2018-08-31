@@ -16,8 +16,16 @@ private SqlSessionTemplate sqlSessionTemplate;
 		getSqlSession().insert("Brand.insert" , brandVO);
 	}
 	
-	public List<BrandVO> SelectList(){
+	public List<BrandVO> selectList(){
 		Map<String, String> paramMap = new HashMap<String, String>();
 		return getSqlSession().selectList("Brand.selectList" , paramMap);
+	}
+	
+	public void update(BrandVO brandVO) {
+		getSqlSession().update("Brand.update" , brandVO);
+	}
+	
+	public void delete(String brandName) {
+		getSqlSession().delete("Brand.delete" , brandName);
 	}
 }

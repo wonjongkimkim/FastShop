@@ -18,8 +18,19 @@ public class UserDAO extends SqlSessionDaoSupport{
 		getSqlSession().insert("User.insert" , userVO);
 	}
 	
-	public List<UserVO> SelectList(){
+	public List<UserVO> selectList(){
 		Map<String, String> paramMap = new HashMap<String, String>();
 		return getSqlSession().selectList("User.selectList" , paramMap);
 	}
+	
+	public void update(UserVO userVO) {
+		getSqlSession().update("User.update" , userVO);
+	}
+	
+	public void delete(String id) {
+		getSqlSession().delete("User.delete",id);
+	}
+		
+		
+	
 }

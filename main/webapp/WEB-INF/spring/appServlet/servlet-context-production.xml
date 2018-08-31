@@ -65,4 +65,27 @@
 	</beans:bean>
 	
 	
+	<beans:bean id = "ProductVO" class="com.kwj.shoppingmall.vo.ProductVO"></beans:bean>
+	<beans:bean id = "ProductDAO" class="com.kwj.shoppingmall.dao.ProductDAO">
+		<beans:property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+	</beans:bean>
+	
+	<beans:bean id = "ReviewVO" class="com.kwj.shoppingmall.vo.ReviewVO"></beans:bean>
+	<beans:bean id = "ReviewDAO" class="com.kwj.shoppingmall.dao.ReviewDAO">
+		<beans:property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+	</beans:bean>
+	
+	<beans:bean id = "WishListVO" class="com.kwj.shoppingmall.vo.WishListVO"></beans:bean>
+	<beans:bean id = "WishListDAO" class="com.kwj.shoppingmall.dao.WishListDAO">
+		<beans:property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+	</beans:bean>
+	
+	<beans:bean id = "OrderVO" class="com.kwj.shoppingmall.vo.OrderVO"></beans:bean>
+	<beans:bean id = "OrderDAO" class="com.kwj.shoppingmall.dao.OrderDAO">
+		<beans:property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+	</beans:bean>
+	
+
+	
+	
 </beans:beans>

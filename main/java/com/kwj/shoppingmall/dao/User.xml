@@ -22,5 +22,23 @@
     <select id="selectList" parameterType="java.util.HashMap" resultMap="resultUserVO">
         SELECT * FROM users LIMIT 10
     </select>
+    
+    <update id="update" parameterType="com.kwj.shoppingmall.vo.UserVO">
+    	UPDATE users SET
+    		username = #{username}
+    		,email = #{email}
+    		,address = #{address}
+    		,passwd = #{passwd}
+    		,phone = #{phone}
+    		,country = #{country}
+    		,date = #{date}
+    	WHERE
+    		id = #{id}
+    </update>
+    
+     <delete id="delete" parameterType="String">
+     	DELETE from users WHERE id = #{id}
+     </delete>
+    
 
 </mapper>

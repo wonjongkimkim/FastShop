@@ -7,7 +7,6 @@
         <result property="name" column="name"/>
         <result property="image" column="image"/>
         <result property="description" column="description"/>
-   
     </resultMap>
 
 	<insert id="insert" parameterType="com.kwj.shoppingmall.vo.BrandVO">
@@ -18,5 +17,15 @@
     <select id="selectList" parameterType="java.util.HashMap" resultMap="resultBrandVO">
         SELECT * FROM brand LIMIT 10
     </select>
+    
+    <update id = "update" parameterType = "com.kwj.shoppingmall.vo.BrandVO">
+    	UPDATE brand SET
+    		image = #{image}
+    		,description = #{description}
+    	WHERE name = #{name}
+    </update>
 
+	<delete id = "delete" parameterType = "String">
+		DELETE from brand WHERE name = #{name}  
+	</delete>
 </mapper>

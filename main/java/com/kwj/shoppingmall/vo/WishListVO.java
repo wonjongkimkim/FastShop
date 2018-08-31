@@ -1,7 +1,7 @@
 package com.kwj.shoppingmall.vo;
 
 public class WishListVO {
-	private String productId;
+	private int productId;
 	private int quantity;
 	private String userId;
 	private String color;
@@ -9,10 +9,10 @@ public class WishListVO {
 	private String brandName;
 	private String image;
 	private float price;
-	public String getProductId() {
+	public int getProductId() {
 		return productId;
 	}
-	public void setProductId(String productId) {
+	public void setProductId(int productId) {
 		this.productId = productId;
 	}
 	public int getQuantity() {

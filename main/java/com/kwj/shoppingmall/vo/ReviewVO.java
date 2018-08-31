@@ -4,7 +4,7 @@ public class ReviewVO {
 	private int id;
 	private String contents;
 	private String userId;
-	private String productId;
+	private int productId;
 	public int getId() {
 		return id;
 	}
@@ -23,10 +23,10 @@ public class ReviewVO {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getProductId() {
+	public int getProductId() {
 		return productId;
 	}
-	public void setProductId(String productId) {
+	public void setProductId(int productId) {
 		this.productId = productId;
 	}
 }
